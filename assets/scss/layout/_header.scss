@@ -1,0 +1,222 @@
+.topbar{
+    height: 6rem;
+    border-bottom: 0.1rem solid $color-desc;
+    @include mediaQuery(phone){
+        display: none
+    }
+    &__content{
+        @include flex(center, space-between);
+    }
+    &__menu{
+        @include flex(center, unset);
+        &-item{
+            padding: 1.8rem 1.5rem;
+            
+            &:not(:last-child){
+                border-right: 0.1rem solid $color-desc;
+            }
+        }
+        &-link{
+            color: $color-light;
+            font-size: 1.4rem;
+            transition: all .3s;
+            &:hover{
+                color: $color-red;
+            }
+        }
+        &-icon{
+            
+        }
+    }
+    &__social{
+        @include flex(center, unset);
+        &-item{
+            padding: 0 0.5rem;
+        }
+        &-link{
+            color: $color-light;
+            font-size: 2rem;
+            transition: all .3s;
+            &:hover{
+                color: $color-red;                
+            }
+        }
+    }
+}
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 6rem;
+    transition: all .3s;
+    .container{
+        @include customMediaQuery(768px,1024px){
+            max-width: 750px;
+        }
+    }
+    &__scroll{
+        background-color: $color-light;
+        z-index: 500;
+        top: 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .header__menu-link{
+            color: $color-dark;
+        }
+        .header__search-btn{
+            color: $color-red;
+        }
+    }
+    &__content{
+        @include flex(center, space-between);
+        @include mediaQuery(phone){
+            padding: 0 2rem;
+        }
+    }
+    &__logo{
+        padding: 2rem 0;
+    }
+    &__right{
+        @include flex(center,space-between);
+    }
+    &__menu{
+        @include flex(center,unset);
+        @include mediaQuery(phone){
+            display: none;
+        }
+        &-item{
+            padding: 1rem 1.4rem;
+        }
+        &-link{
+            color: $color-light;
+            font-weight: 600;
+            transition: all .3s;
+            &:hover{
+                color: $color-red;
+            }
+        }
+        &-dropdown{
+            position: relative;
+            
+            &:hover &-list{
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+            &-list{
+                position: absolute;
+                top: 150%;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                background-color: $color-light;
+                min-width: 15rem;
+                max-width: 30rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transition: top .4s, opacity .1s, visibility .1s;
+                li{
+                    padding: 1rem 2rem;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: $color-red;
+                    }
+                    &:hover a{
+                        color: $color-light;
+                    }
+                    a{
+                        color: $color-dark;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    &__action{
+        margin-left: 5rem;
+        @include flex(center, unset);
+    }
+    &__search-btn{
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        color: $color-light;
+        transition: all .3s;
+        &:hover{
+            color: $color-red;
+        }
+    }
+    &__modal-btn{
+        @include mediaQuery(phone){
+            display: none;
+        }
+        img{
+            max-width: 2.7rem;
+        }
+    }
+    &__hamburger-btn{
+        color: $color-red;
+        font-size: 4rem;
+        display: none;
+        &:hover{
+            color: $color-red;
+        }
+        @include mediaQuery(phone){
+            display: block;
+        }
+    }
+    &__mobile-menu{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 30rem;
+        left: 0;
+        width: 100%;
+        background-color: $color-light;
+        padding: 2rem 3rem;
+        z-index: 100;
+        text-align: center;
+        transition: all .3s;
+        &.active{
+            display: block;
+            top: 10rem;
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before{
+            content: "";
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: $color-light;
+            display: inline-block;
+            position: absolute;
+            right: 2.8rem;
+            top: -1.8rem;
+            transform: rotate(45deg);
+        }
+        & > li{
+            padding: 1rem 0;
+            & > a{
+                color: $color-dark;
+                font-weight: 600;
+            }
+        }
+        
+        &-dropdown{
+            position: relative;
+            &-list{
+                display: none;
+                background-color: $color-red;
+                padding: 1rem 0;
+                & > li{
+                    padding: 0.4rem 0;
+                    a{
+                        color: $color-light;
+                    }
+                }
+                &.active{
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

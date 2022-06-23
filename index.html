@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business - 3</title>
+
+    <!--=============== Font: Poppins ===============-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== Bootstrap 5 CSS ===============-->
+    <link rel="stylesheet" href="assets/library/bootstrap-5/css/bootstrap.min.css" />
+
+    <!--=============== Swiper ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!--=============== Custom Css ===============-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <!--=============== TOPBAR - ===============-->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="topbar__content">
+                            <ul class="topbar__menu">
+                                <li class="topbar__menu-item">
+                                    <a href="#" class="topbar__menu-link">
+                                        <i class='bx bx-envelope topbar__menu-icon'></i> email@email.com
+                                    </a>
+                                </li>                                
+                                <li class="topbar__menu-item">
+                                    <a href="#" class="topbar__menu-link">
+                                        <i class='bx bxs-phone-call topbar__menu-icon'></i> (+1) 9999 999 999
+                                    </a>
+                                </li>
+                                <li class="topbar__menu-item">
+                                    <a href="#" class="topbar__menu-link">
+                                        <i class='bx bx-map topbar__menu-icon'></i> 55 Gerad Lane, NY 11201, USA
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="topbar__social">
+                                <li class="topbar__social-item">
+                                    <a href="#" class="topbar__social-link">
+                                        <i class='bx bxl-facebook topbar__social-icon'></i>
+                                    </a>
+                                </li>
+                                <li class="topbar__social-item">
+                                    <a href="#" class="topbar__social-link">
+                                        <i class='bx bxl-instagram topbar__social-icon'></i>
+                                    </a>
+                                </li>
+                                <li class="topbar__social-item">
+                                    <a href="#" class="topbar__social-link">
+                                        <i class='bx bxl-twitter topbar__social-icon'></i>
+                                    </a>
+                                </li>
+                                <li class="topbar__social-item">
+                                    <a href="#" class="topbar__social-link">
+                                        <i class='bx bxl-linkedin topbar__social-icon'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=============== HEADER - ===============-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header__content">
+                            <div class="header__left">
+                                <div class="header__logo">
+                                    <a href="/">
+                                        <img src="assets/images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__right">
+                                <ul class="header__menu">
+                                    <li class="header__menu-item">
+                                        <a href="#" class="header__menu-link">Home</a>
+                                    </li>
+                                    <li class="header__menu-item header__menu-dropdown">
+                                        <a href="#" class="header__menu-link">Pages +</a>
+                                        <ul class="header__menu-dropdown-list">
+                                            <li><a href="#">Pages - 1</a></li>
+                                            <li><a href="#">Pages - 2</a></li>
+                                            <li><a href="#">Pages - 3</a></li>
+                                            <li><a href="#">Pages - 4</a></li>
+                                            <li><a href="#">Pages - 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-item header__menu-dropdown">
+                                        <a href="#" class="header__menu-link">Portfolios +</a>
+                                        <ul class="header__menu-dropdown-list">
+                                            <li><a href="#">Portfolio - 1</a></li>
+                                            <li><a href="#">Portfolio - 2</a></li>
+                                            <li><a href="#">Portfolio - 3</a></li>
+                                            <li><a href="#">Portfolio - 4</a></li>
+                                            <li><a href="#">Portfolio - 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-item header__menu-dropdown">
+                                        <a href="#" class="header__menu-link">Services +</a>
+                                        <ul class="header__menu-dropdown-list">
+                                            <li><a href="#">Services - 1</a></li>
+                                            <li><a href="#">Services - 2</a></li>
+                                            <li><a href="#">Services - 3</a></li>
+                                            <li><a href="#">Services - 4</a></li>
+                                            <li><a href="#">Services - 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a href="#" class="header__menu-link">Blog</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a href="#" class="header__menu-link">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="header__action">
+                                    <a href="#" class="header__search-btn"><i class='bx bx-search-alt'></i></a>
+                                    <a href="#" class="header__modal-btn"><img src="assets/images/dots.png" alt=""></a>
+                                    <a href="javascript:;" class="header__hamburger-btn"><i class='bx bx-menu'></i></a>
+                                </div>
+                            </div>
+                            <ul class="header__mobile-menu">
+                                <li><a href="#">Home</a></li>
+                                <li class="header__mobile-menu-dropdown">
+                                    <a href="#">Pages +</a>
+                                    <ul class="header__mobile-menu-dropdown-list">
+                                        <li><a href="#">Pages - 1</a></li>
+                                        <li><a href="#">Pages - 2</a></li>
+                                        <li><a href="#">Pages - 3</a></li>
+                                        <li><a href="#">Pages - 4</a></li>
+                                        <li><a href="#">Pages - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__mobile-menu-dropdown">
+                                    <a href="#">Portfolios +</a>
+                                    <ul class="header__mobile-menu-dropdown-list">
+                                        <li><a href="#">Portfolio - 1</a></li>
+                                        <li><a href="#">Portfolio - 2</a></li>
+                                        <li><a href="#">Portfolio - 3</a></li>
+                                        <li><a href="#">Portfolio - 4</a></li>
+                                        <li><a href="#">Portfolio - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__mobile-menu-dropdown">
+                                    <a href="#">Services +</a>
+                                    <ul class="header__mobile-menu-dropdown-list">
+                                        <li><a href="#">Service - 1</a></li>
+                                        <li><a href="#">Service - 2</a></li>
+                                        <li><a href="#">Service - 3</a></li>
+                                        <li><a href="#">Service - 4</a></li>
+                                        <li><a href="#">Service - 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== SECTION - SLIDER - ===============-->
+        <section class="slider section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="slider__line"></div>
+                        <div class="slider__title">We maximize</div>
+                        <div class="slider__subtitle">your business growth</div>
+                        <a href="#" class="button button--red slider__button">Find Consultant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SECTION - ABOUT - ===============-->
+        <section class="about section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 about__image">
+                        <img src="assets/images/about.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 about__info">
+                        <div class="section__line"></div>
+                        <div class="section__title">We take your business to next level</div>
+                        <div class="section__subtitle">30+ Years Experience In Business And Finance Consulting, IT
+                            Solutions, And Working With 5k+ Clients Over The World.</div>
+                        <div class="section__desc">Nor is there anyone who loves or pursues or desires to obtain pain of
+                            itself, because it is pain, but occasionally circumstances occur in which toil and pain can
+                            procure him some great pleasure. Creation timelines for the digital consulting business
+                            theme 2021 bstandard lorem ipsum passage vary, with some citing the 15th century and others
+                            the 20th.</div>
+                        <a href="#" class="button button--red">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SECTION - SERVICES - ===============-->
+        <section class="services section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-7">
+                        <div class="section__line"></div>
+                        <div class="section__title">What services we provide to our customers business</div>
+                    </div>
+                    <div class="col-md-5 text-md-end">
+                        <a href="#" class="button button--red">View Services</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="services__card">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services__card">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services__card">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-3.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services__card mb-0">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-4.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services__card mb-0">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-5.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services__card mb-0">
+                            <div class="services__card-image">
+                                <img src="assets/images/services/services-6.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="services__card-info">
+                                <div class="services__card-title">Business Planning</div>
+                                <div class="services__card-desc">Quisque placerat vitae lacus ut scelerisque. Fusce
+                                    luctus odio ac nibh luctus consulting.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SECTION - PROJECT - ===============-->
+        <section class="project section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section__line mx-auto"></div>
+                        <div class="section__title">Completed business cases</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="project__filter">
+                            <button class="project__filter-item active" data-type="*" name="isotope-filter">All</button>
+                            <button class="project__filter-item" data-type="business" name="isotope-filter">Business
+                                Strategy</button>
+                            <button class="project__filter-item" data-type="financial"
+                                name="isotope-filter">Financial</button>
+                            <button class="project__filter-item" data-type="investment"
+                                name="isotope-filter">Investment</button>
+                            <button class="project__filter-item" data-type="tax" name="isotope-filter">Tax
+                                Consulting</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project__card">
+                            <div class="project__card-item" data-type="financial">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__card-item" data-type="business">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__card-item" data-type="investment">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-3.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__card-item" data-type="financial">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__card-item" data-type="tax">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-4.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__card-item" data-type="business">
+                                <div class="project__card-photo">
+                                    <img src="assets/images/project/project-1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="project__card-info">
+                                    <div class="project__card-subtitle">Category</div>
+                                    <div class="project__card-title">Project Title</div>
+                                    <a href="#" class="project__card-btn">
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SECTION - TEAM - ===============-->
+        <section class="team section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-7">
+                        <div class="section__line"></div>
+                        <div class="section__title">We’re experienced professionals</div>
+                    </div>
+                    <div class="col-md-5 text-sm-end">
+                        <a href="#" class="button button--red">View Teams</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="team__content position-relative">
+                            <div class="team__swiper swiper">
+                                <div class="team__wrapper swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="team__card">
+                                            <div class="team__card-photo">
+                                                <img src="assets/images/team/team-1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="team__card-info">
+                                                <div class="team__card-title">Dokato Johnson</div>
+                                                <div class="team__card-subtitle">Business Advisor</div>
+                                            </div>
+                                            <div class="team__card-social">
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-facebook'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-instagram'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-twitter'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-linkedin'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="team__card">
+                                            <div class="team__card-photo">
+                                                <img src="assets/images/team/team-2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="team__card-info">
+                                                <div class="team__card-title">Dokato Johnson</div>
+                                                <div class="team__card-subtitle">Business Advisor</div>
+                                            </div>
+                                            <div class="team__card-social">
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-facebook'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-instagram'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-twitter'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-linkedin'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="team__card">
+                                            <div class="team__card-photo">
+                                                <img src="assets/images/team/team-3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="team__card-info">
+                                                <div class="team__card-title">Dokato Johnson</div>
+                                                <div class="team__card-subtitle">Business Advisor</div>
+                                            </div>
+                                            <div class="team__card-social">
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-facebook'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-instagram'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-twitter'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-linkedin'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="team__card">
+                                            <div class="team__card-photo">
+                                                <img src="assets/images/team/team-4.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="team__card-info">
+                                                <div class="team__card-title">Dokato Johnson</div>
+                                                <div class="team__card-subtitle">Business Advisor</div>
+                                            </div>
+                                            <div class="team__card-social">
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-facebook'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-instagram'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-twitter'></i></a>
+                                                <a href="#" class="team__card-social-item"><i
+                                                        class='bx bxl-linkedin'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination team__swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SECTION - BLOG - ===============-->
+        <section class="blog section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section__line mx-auto"></div>
+                        <div class="section__title">Latest blog posts</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="blog__content position-relative">
+                            <div class="blog__swiper swiper">
+                                <div class="blog__wrapper swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="blog__card">
+                                            <div class="blog__card-photo">
+                                                <img src="assets/images/blog/blog-1.jpg" class="img-fluid" alt="">
+                                                <ul class="blog__card-meta">
+                                                    <li>25 Jan 2021</li>
+                                                    <li>Dijital Marketing</li>
+                                                </ul>
+                                            </div>
+                                            <div class="blog__card-info">
+                                                <div class="blog__card-title">7 Productivity tips to avoid burnout when
+                                                    working</div>
+                                                <div class="blog__card-desc">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Beatae exercitationem totam...</div>
+                                                <a href="#" class="button button--red">Read More <i
+                                                        class='bx bx-chevron-right'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog__card">
+                                            <div class="blog__card-photo">
+                                                <img src="assets/images/blog/blog-2.jpg" class="img-fluid" alt="">
+                                                <ul class="blog__card-meta">
+                                                    <li>25 Jan 2021</li>
+                                                    <li>Dijital Marketing</li>
+                                                </ul>
+                                            </div>
+                                            <div class="blog__card-info">
+                                                <div class="blog__card-title">7 Productivity tips to avoid burnout when
+                                                    working</div>
+                                                <div class="blog__card-desc">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Beatae exercitationem totam...</div>
+                                                <a href="#" class="button button--red">Read More <i
+                                                        class='bx bx-chevron-right'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog__card">
+                                            <div class="blog__card-photo">
+                                                <img src="assets/images/blog/blog-3.jpg" class="img-fluid" alt="">
+                                                <ul class="blog__card-meta">
+                                                    <li>25 Jan 2021</li>
+                                                    <li>Dijital Marketing</li>
+                                                </ul>
+                                            </div>
+                                            <div class="blog__card-info">
+                                                <div class="blog__card-title">7 Productivity tips to avoid burnout when
+                                                    working</div>
+                                                <div class="blog__card-desc">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Beatae exercitationem totam...</div>
+                                                <a href="#" class="button button--red">Read More <i
+                                                        class='bx bx-chevron-right'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog__card">
+                                            <div class="blog__card-photo">
+                                                <img src="assets/images/blog/blog-4.jpg" class="img-fluid" alt="">
+                                                <ul class="blog__card-meta">
+                                                    <li>25 Jan 2021</li>
+                                                    <li>Dijital Marketing</li>
+                                                </ul>
+                                            </div>
+                                            <div class="blog__card-info">
+                                                <div class="blog__card-title">7 Productivity tips to avoid burnout when
+                                                    working</div>
+                                                <div class="blog__card-desc">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Beatae exercitationem totam...</div>
+                                                <a href="#" class="button button--red">Read More <i
+                                                        class='bx bx-chevron-right'></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination blog__swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== FOOTER - ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="footer__desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolore porro iste voluptates
+                            assumenda corporis consequatur amet vitae exercitationem quas.
+                        </div>
+                        <ul class="footer__social">
+                            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__title">QUICK MENU</div>
+                        <ul class="footer__links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">                    
+                        <div class="footer__title">OUR SERVICES</div>
+                        <ul class="footer__links">
+                            <li><a href="#">Business planning</a></li>
+                            <li><a href="#">Tax strategy</a></li>
+                            <li><a href="#">Financial advices</a></li>
+                            <li><a href="#">Insurance strategy</a></li>
+                            <li><a href="#">Manage investment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__title">CONTACT INFO</div>
+                        <ul class="footer__contact-list">
+                            <li><i class='bx bx-map' ></i> 55 Gerad Lane, NY 11201, USA</li>
+                            <li><a href="#"><i class='bx bx-phone' ></i> (+1) 9999 999 999</a></li>
+                            <li><a href="#"><i class='bx bx-envelope' ></i> email@email.com</a></li>
+                            <li><i class='bx bxs-time' ></i> Office Hours: 9AM - 10PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    
+
+
+    <!--=============== Bootstrap 5 ===============-->
+    <script src="assets/library/bootstrap-5/js/bootstrap.min.js"></script>
+
+    <!--=============== Jquery ===============-->
+    <script src="assets/library/jquery/jquery-3.6.0.min.js"></script>
+
+    <!--=============== Isotope ===============-->
+    <script src="assets/library/isotope-layout/dist/isotope.pkgd.min.js"></script>
+
+    <!--=============== Swiper ===============-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=============== Scroll Reveal ===============-->
+    <script src="assets/library/scrollreveal/scrollreveal.min.js"></script>
+
+    <!--=============== Custom JS ===============-->
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        var swiper1 = new Swiper(".team__swiper", {
+            pagination: {
+                el: ".team__swiper-pagination",
+                dynamicBullets: true,
+            },
+            
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView:1
+                },
+                768:{
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        var swiper2 = new Swiper(".blog__swiper", {
+            pagination: {
+                el: ".blog__swiper-pagination",
+                dynamicBullets: true,
+            },
+            spaceBetween: 30,
+            loop: true,
+            breakpoints:{
+                767:{
+                    slidesPerView:1
+                },
+                768:{
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

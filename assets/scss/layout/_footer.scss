@@ -1,0 +1,105 @@
+.footer{
+    padding: 8rem 0;
+    background-color: $color-dark;
+    &__logo{
+        @include mediaQuery(phone){
+            text-align: center;  
+        }
+    }
+    &__desc{
+        color: $color-light;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        line-height: 2;
+        padding-right: 2rem;
+        @include mediaQuery(phone){
+            text-align: center;
+            padding: 0 2rem
+        }
+    }
+    &__social{
+        @include flex(center, flex-start);
+        @include mediaQuery(phone){
+            justify-content: center;
+        }
+        li{
+            width: 3rem;
+            height: 3rem;
+            @include flex(center,center);
+            background-color: $color-desc;
+            margin-right: 1rem;
+            transition: all .3s;
+            &:hover{
+                background-color: $color-red;
+            }
+            a{
+                color: $color-light;
+            }
+        }
+    }
+    &__title{
+        position: relative;
+        color: $color-light;
+        font-weight: 700;
+        font-size: 2rem;
+        @include mediaQuery(phone){
+            text-align: center;  
+            margin-top: 3rem; 
+        }
+        &::after{
+            content: "";
+            width: 7rem;
+            height: 0.6rem;
+            background-color: $color-red;
+            display: block;
+            margin: 1rem 0 2rem;
+            @include mediaQuery(phone){
+                margin: 1rem auto 2rem;
+            }
+        }
+    }
+    &__links{
+        @include mediaQuery(phone){
+            text-align: center;   
+        }
+        li{
+            margin: 1rem 0;
+            a{
+                color: $color-light;
+                font-weight: 500;
+                transition: all .3s;
+                &:hover{
+                    color: $color-red;
+                }
+            }
+        }
+    }
+    &__contact-list{
+        @include mediaQuery(phone){
+            text-align: center   
+        }
+        li{
+            @include flex(flex-start, flex-start);
+            color: $color-light;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            font-weight: 500;
+            @include mediaQuery(phone){
+                justify-content: center;
+            }
+            a{
+                color: $color-light;
+                transition: all .3s;
+                &:hover{
+                    color: $color-red;
+                }
+            }
+            i{
+                color: $color-red;
+                margin-top: 0.4rem;
+                margin-right: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
